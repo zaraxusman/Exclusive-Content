@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Exclusive Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #1a0000, #000000);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      color: #ddd;
+    }
+    p {
+      margin: 15px 0;
+      color: #ccc;
+    }
+    .download-btn {
+      display: none;
+      background-color: #1db954;
+      color: white;
+      padding: 15px;
+      margin: 10px auto;
+      width: 80%;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+    }
+    #timer {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Watch Exclusive Videos</h1>
+  <h2>Download Movies in 4K</h2>
+  <p>Stream top Web Series in Ultra HD - NO ads, no login!</p>
+  <p>Exclusive videos are limited! Delete after some time.</p>
+
+  <div id="timer">Starting download in 10s...</div>
+
+  <a id="btn1" class="download-btn" href="https://www.profitableratecpm.com/j8422536aq?key=96b5093f57cc5791e8f3c760692fafb5">Exclusive Videos</a>
+  <a id="btn2" class="download-btn" href="https://www.profitableratecpm.com/pnecafp7?key=f94c9c4a47a757aa6c2b7155dde60f56">Movies (HD)</a>
+  <a id="btn3" class="download-btn" href="https://www.profitableratecpm.com/pz74qpswnm?key=52bff450437fefaf5f40aa5aafd7f018">Web Series (HD)</a>
+
+  <script>
+    let seconds = 10;
+    const timer = document.getElementById("timer");
+    const buttons = ["btn1", "btn2", "btn3"];
+
+    const countdown = setInterval(() => {
+      seconds--;
+      if (seconds > 0) {
+        timer.textContent = `Starting download in ${seconds}s...`;
+      } else {
+        clearInterval(countdown);
+        timer.textContent = "Download now!";
+        buttons.forEach(id => {
+          document.getElementById(id).style.display = "block";
+        });
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
